@@ -1,15 +1,14 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
-import { redTheme, blueTheme, greenTheme } from './components/themes';
-import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import GlobalStlyes from './components/globals/GlobalStyles';
 
 function App() {
+
   return (
-    <ThemeProvider theme={redTheme}>
-      <main>
-        <Navbar />
-      </main>
-    </ThemeProvider>
+    <>
+    <GlobalStlyes />
+      <Home />
+    </>
   );
 }
 
