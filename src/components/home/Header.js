@@ -1,6 +1,6 @@
 import React from 'react';
 import Hero from '../globals/Hero';
-import aboutBcg from '../../images/aboutBcg.jpeg';
+import aboutBcg from '../../images/aboutBcg.jpg';
 
 const Header = () => {
   return (
