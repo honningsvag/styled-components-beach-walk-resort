@@ -35,7 +35,6 @@ const About = () => {
 const AboutCenter = styled.div`
   .about-img, .about-info {
     padding: ${setRem(30)};
-
   }
   .about-img {
     img {
@@ -52,13 +51,16 @@ const AboutCenter = styled.div`
   }
   width: 90vw;
   margin: 0 auto;
-  ${media.desktop`
+  ${media.large`
+    .about-img, .about-info {
+      padding: ${setRem(0)};
+    }
     width: 100vw;
     max-width: 1170px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: ${setRem(32)};
-    .about-img {
+    .about-img, .about-info {
       align-self: center;
     }
     .about-info {

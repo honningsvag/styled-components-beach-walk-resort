@@ -23,3 +23,8 @@ export const PrimaryButton = styled.button`
   ${props => `margin: ${props.top || 0} ${props.bottom || 0} ${props.right || 0}  ${props.left || 0}`}
   
 `;
+
+export const SmallButton = styled(PrimaryButton)`
+  padding: ${setRem(9)} ${setRem(12)};
+
+`;
