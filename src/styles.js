@@ -35,7 +35,7 @@ export const setBorder = ({ width = '2px', style = 'solid', color = 'black' } = 
   return `border: ${width} ${style} ${color}`;
 };
 
-const sizes = {
+export const sizes = {
   large: 1200,
   desktop: 992,
   tablet: 768,
@@ -56,4 +56,10 @@ export const setTransition = ({
   timing = 'ease-in-out'
 } = {}) => {
   return `transition: ${property} ${time} ${timing}`;
+};
+
+export const setShadow = {
+  light:'box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75)',
+  dark:'box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75)',
+  darkest: 'box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75)'
 };
