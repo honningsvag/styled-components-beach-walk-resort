@@ -12,7 +12,7 @@ const Room = ({ className, room }) => {
         <img src={img} alt='single room' />
         <div className='price'>${price}</div>
       </div>
-      <div className='room'>
+      <div className='room-info'>
         <h4>{title}</h4>
         <p>{info}</p>
         <SmallButton>Hello</SmallButton>
@@ -55,10 +55,10 @@ export default styled(Room)`
     &:hover .price {
       opacity: 1;
     }
-
-    .room-info {
+  }
+  .room-info {
       padding: ${setRem()};
-      
+
       h4 {
         text-transform: capitalize;
         ${setLetterSpacing()};
@@ -74,7 +74,6 @@ export default styled(Room)`
     &:hover{
       ${setShadow.dark};
     }
-  }
 `;
 
 Room.propTypes = {
