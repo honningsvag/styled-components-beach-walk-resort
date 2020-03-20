@@ -3,4 +3,4 @@
 
 I'm following this tutorial https://www.udemy.com/course/styled-components-tutorial-and-project-course/
 
-![rendered site](demo1.png)
+![rendered website](demo1.png)
